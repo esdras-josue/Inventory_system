@@ -1,5 +1,4 @@
 const mysql = require('mysql2')
-const jwt = require("jsonwebtoken");
 require('dotenv').config();
 
 const connection = mysql.createConnection({
@@ -22,3 +21,4 @@ connection.connect((err) =>{
     console.log('Connected to MySQL');
 });
 
+module.exports = connection;
